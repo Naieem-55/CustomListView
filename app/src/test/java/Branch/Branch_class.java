@@ -4,17 +4,21 @@ public class Branch_class {
 
     String name,id;
     float cgpa;
-    int number;
+
+    double avg;
+
 
     Branch_class(){
 
     }
 
-    Branch_class(String a, String b, float c,int e){
+
+    Branch_class(String a,String b,float c,double d){
         name=a;
         id=b;
         cgpa=c;
-        number=e;
+        avg=d;
+
     }
 
     public String getName() {
@@ -41,11 +45,13 @@ public class Branch_class {
         this.cgpa = cgpa;
     }
 
-    public int getNumber() {
-        return number;
+
+    public double getAvg() {
+        return avg;
     }
 
-    public void setNumber(int number) {
-        this.number = number;
+    public void setAvg(double avg) {
+        this.avg = avg;
+
     }
 }
